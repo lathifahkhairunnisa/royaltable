@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="id"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#8d1727"><title>eatstime — Royal Table</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<header><div class="brand"><b>E</b><div><strong>eatstime</strong><small>ROYAL TABLE</small></div></div>
+<div><button id="how">Cara Main</button><button class="cart" id="cart">Pesanan <i id="count">0</i></button></div></header>
+<main>
+<section class="hero"><div><label>FINE DINING SIMULATOR</label><h1>Welcome to<br><em>Royal Table.</em></h1>
+<p>Kelola restoran mewahmu, susun pesanan, layani tamu, dan bangun reputasi restoran terbaik di kota.</p>
+<button class="primary" id="start">Mulai Service →</button></div>
+<div class="heroimg"><img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1200&q=85" alt="Fine dining"></div></section>
+<section class="stats"><div>💰<small>Saldo</small><b id="money">Rp 250.000</b></div><div>⭐<small>Reputasi</small><b id="rep">82 / 100</b></div><div>👥<small>Tamu dilayani</small><b id="served">0</b></div><div>🔥<small>Combo</small><b id="combo">x0</b></div></section>
+<section class="menus" id="menus"><label>THE ROYAL MENU</label><h2>Pilih hidangan</h2><nav id="filters"><button class="on" data-cat="all">Semua</button><button data-cat="starter">Starter</button><button data-cat="main">Main Course</button><button data-cat="dessert">Dessert</button><button data-cat="drink">Drinks</button></nav><div class="grid" id="grid"></div></section>
+<section class="service"><div><label>TABLE SERVICE</label><h2>Siap melayani tamu?</h2><p>Pelayanan cepat dan pesanan yang tepat memberi tip serta menaikkan reputasi restoran.</p></div>
+<div class="scene"><div class="lamp"></div><div class="table">🍽️</div><div class="guest">👩🏻 <span>Guest #<b id="guest">01</b><small>menunggu pelayanan</small></span><button id="serve">Layani →</button></div></div></section>
+<section class="cards"><article><label>TODAY'S SPECIAL</label><h3>Truffle Pasta</h3><p>Handmade pasta, parmesan, cream & black truffle.</p><button class="mini" data-special="Truffle Pasta">Tambah</button></article>
+<article><label>CHEF'S PICK</label><h3>Wagyu Signature</h3><p>Premium wagyu dengan rosemary jus dan roasted vegetables.</p><button class="mini" data-special="Wagyu Signature">Tambah</button></article>
+<article class="dark"><label>DAILY GOAL</label><h3>Layani 5 tamu</h3><div class="progress"><span id="bar"></span></div><small id="goal">0 / 5 tamu</small></article></section>
+</main>
+<div class="shade" id="shade"></div><aside id="drawer"><button class="close" id="close">×</button><label>YOUR ORDER</label><h2>Pesanan</h2><div id="orders"></div><hr><div class="total"><span>Total</span><b id="total">Rp 0</b></div><button class="primary wide" id="checkout">Kirim ke Dapur →</button></aside>
+<div class="modal" id="modal"><div><button class="close" id="modalClose">×</button><label>EATSTIME</label><h2 id="modalTitle"></h2><p id="modalText"></p><button class="primary" id="modalOk">Tutup</button></div></div>
+<div class="toast" id="toast"></div><script src="script.js"></script></body></html>
